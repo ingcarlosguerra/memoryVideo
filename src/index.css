@@ -28,7 +28,6 @@ body {
 .portada {
   width: 238px;
   height: 173px;
-  background-image: url("reverso.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;

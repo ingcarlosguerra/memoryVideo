@@ -41,7 +41,11 @@ const Carta = ({ index, seleccionarCarta, cartaCerrada, estaSiendoComparada, fue
       handleFullScreen();
     }} >
       <ReactCardFlip isFlipped={estaSiendoComparada || fueAdivinada} flipDirection="vertical">
-        <div className={`portada ${estaSiendoComparada || fueAdivinada ? 'oculto' : ''}`}></div>
+            <div 
+        className={`portada ${estaSiendoComparada || fueAdivinada ? 'oculto' : ''}`} 
+        style={{ backgroundImage: `url("reverso.png")` }}
+      >
+      </div>
         <div className={`contenido ${estaSiendoComparada || fueAdivinada ? 'visible' : ''}`}>
           {!isFullScreen && (
             <video 
